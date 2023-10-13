@@ -1,3 +1,10 @@
+:root{
+    --title-color: #111729;
+    --text-color: #677489;
+    --card-color: #FFFFFF;
+    --bg-color: #F2F5F9;
+}
+
 *{
     box-sizing: border-box;
 }
