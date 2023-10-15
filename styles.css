@@ -10,12 +10,18 @@
 }
 
 body{
+    min-height: 100vh;
+    min-width: 420px;
     font-family: 'Lato', sans-serif;
-    color: var(--text-color);
     font-size: 1rem;
-
+    color: var(--text-color);
+    background-color: var( --bg-color);
     display: flex;
     align-items: center;
+}
+
+p{
+    margin: 0;
 }
 
 .card__body__title{
@@ -26,14 +32,57 @@ body{
 }
 
 .card__photo{
-    height: 300px;
-    background: no-repeat url('assets/hero-image-business-card.png');
+    height: 288px;
+    background-image: url('assets/white-overlay.svg'), url('assets/hero-image-business-card.png');
+    background-size: 100%, cover ;
+    background-repeat: no-repeat;
+    background-position: 0 220px , center ;
 }
 
 .card{
+    overflow: hidden;
     width: 420px;
     height: 528px;
     margin: 0 auto;
+    background: var(--card-color);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.card__body{
+    padding: 0 35px;
+}
+
+.card__body__title{
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.card__body__text{
+    line-height: 22px;
+    margin-bottom: 23px;
+}
+
+.card__footer{
+    padding: 21px 35px;
+    border-top: 1px solid  var( --bg-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card__footer__avatar{
+    width: 46px;
+    height: 46px;
+    border: 3px solid var( --bg-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .card__footer__customer p:nth-child(1){
@@ -42,5 +91,5 @@ body{
 }
 
 .card__footer__customer p:nth-child(2){
-    /* font-weight: lighter; */
+    font-size: 0.8rem;
 }
